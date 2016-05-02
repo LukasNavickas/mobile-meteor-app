@@ -1,0 +1,23 @@
+<head>
+  <title>Barcode Scanner</title>
+</head>
+
+<body>
+  {{> barcode_scanner}}
+  {{> check}}
+</body>
+
+
+<template name="barcode_scanner">
+  <button>Scan</button>
+</template>
+
+<template name="check">
+  <button class="checkit">Check Doritos Chips!</button>
+  <ul>
+    <li><b>Fett: </b>{{fett}}</li>
+    <li><b>Gesättigte Fettsäuren: </b>{{gesfett}}</li>
+    <li><b>Zucker: </b>{{zucker}}</li>
+    <li><b>Salz: </b>{{salz}}</li>
+  </ul>
+</template>
